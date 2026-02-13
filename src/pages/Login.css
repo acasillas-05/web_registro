@@ -1,0 +1,116 @@
+.login-container {
+  min-height: 100vh;
+  background-color: #282c34;
+  background-image: url('../assets/Fondo_TechMahindra.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background-color: rgba(26, 29, 35, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.login-logo {
+  height: 80px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.login-box h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.error-message {
+  background-color: rgba(255, 43, 43, 0.2);
+  border: 1px solid #ff2b2b;
+  color: #ff2b2b;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #3a3f47;
+  border-radius: 5px;
+  background-color: #282c34;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff2b2b;
+}
+
+/* Cambiar color del icono del ojo a blanco */
+.form-group input[type="password"]::-ms-reveal {
+  filter: invert(1) brightness(2);
+}
+
+.form-group input[type="password"]::-webkit-credentials-auto-fill-button {
+  filter: invert(1) brightness(2);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff2b2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #ff3636;
+}
+
+.register-link {
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #ff2b2b;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+  color: #ff3636;
+}

@@ -1,0 +1,15 @@
+.page-container {
+  min-height: 100vh;
+  background-color: #282c34;
+  background-image: url('../assets/Fondo_TechMahindra.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-content {
+  padding-top: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+}
