@@ -5,11 +5,15 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-content {
+  flex: 1;
   padding-top: 90px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 30px;
   color: white;
 }

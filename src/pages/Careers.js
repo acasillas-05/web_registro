@@ -3,16 +3,16 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './Page.css';
 
-function Industries() {
+function Careers() {
   return (
     <div className="page-container">
       <Header />
       <div className="page-content">
-        {/* Contenido de Industries */}
+        {/* Contenido de Careers */}
       </div>
       <Footer />
     </div>
   );
 }
 
-export default Industries;
+export default Careers;

@@ -23,6 +23,8 @@ function Header() {
           <Link to="/about-us">About Us</Link>
           <Link to="/capabilities">Capabilities</Link>
           <Link to="/industries">Industries</Link>
+          <Link to="/insights">Insights</Link>
+          <Link to="/careers">Careers</Link>
         </nav>
         <img 
           src="/Logout_Logo.png" 

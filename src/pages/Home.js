@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import './Page.css';
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
       <div className="page-content">
         {/* Contenido de Home */}
       </div>
+      <Footer />
     </div>
   );
 }

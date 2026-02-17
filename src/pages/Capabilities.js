@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import './Page.css';
 
 function Capabilities() {
@@ -9,6 +10,7 @@ function Capabilities() {
       <div className="page-content">
         {/* Contenido de Capabilities */}
       </div>
+      <Footer />
     </div>
   );
 }

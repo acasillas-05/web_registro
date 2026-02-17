@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Capabilities from './pages/Capabilities';
 import Industries from './pages/Industries';
+import Insights from './pages/Insights';
+import Careers from './pages/Careers';
 import './App.css';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/capabilities" element={<Capabilities />} />
         <Route path="/industries" element={<Industries />} />
+        <Route path="/insights" element={<Insights />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
     </Router>
   );
