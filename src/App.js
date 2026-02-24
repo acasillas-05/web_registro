@@ -8,6 +8,7 @@ import Capabilities from './pages/Capabilities';
 import Industries from './pages/Industries';
 import Insights from './pages/Insights';
 import Careers from './pages/Careers';
+import ProtectedRoute from './components/ProtectedRoute';
 import './App.css';
 
 function App() {
@@ -17,12 +18,12 @@ function App() {
         <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/capabilities" element={<Capabilities />} />
-        <Route path="/industries" element={<Industries />} />
-        <Route path="/insights" element={<Insights />} />
-        <Route path="/careers" element={<Careers />} />
+        <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+        <Route path="/about-us" element={<ProtectedRoute><AboutUs /></ProtectedRoute>} />
+        <Route path="/capabilities" element={<ProtectedRoute><Capabilities /></ProtectedRoute>} />
+        <Route path="/industries" element={<ProtectedRoute><Industries /></ProtectedRoute>} />
+        <Route path="/insights" element={<ProtectedRoute><Insights /></ProtectedRoute>} />
+        <Route path="/careers" element={<ProtectedRoute><Careers /></ProtectedRoute>} />
       </Routes>
     </Router>
   );
