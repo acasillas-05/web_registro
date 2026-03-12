@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './Page.css';
-import './AboutUs.css';
+import './Battle.css';
 
 const BASE_URL = 'https://pokeapi.co/api/v2/pokemon';
 
@@ -31,7 +31,7 @@ const buildFighter = (pokemon) => ({
   shieldActive: false
 });
 
-function AboutUs() {
+function Battle() {
   const [leftInput, setLeftInput] = useState('pikachu');
   const [rightInput, setRightInput] = useState('charizard');
   const [leftPokemon, setLeftPokemon] = useState(null);
@@ -215,35 +215,41 @@ function AboutUs() {
     <div className="page-container">
       <Header />
       <div className="page-content">
-        <h1>Arena Pokémon por Turnos</h1>
+        <h1 className="battle-title">Arena Pokemon por Turnos</h1>
+        <p className="battle-subtitle">Elige dos Pokemon, inicia el combate y observa el resultado turno a turno.</p>
 
         <form className="battle-selector" onSubmit={loadSelectedPokemons}>
-          <div className="selector-group">
-            <label htmlFor="pokemon-left">Pokémon 1</label>
-            <input
-              id="pokemon-left"
-              type="text"
-              value={leftInput}
-              onChange={(event) => setLeftInput(event.target.value)}
-              placeholder="Ej: pikachu"
-              className="search-input"
-            />
+          <div className="selector-inputs">
+            <div className="selector-group">
+              <label htmlFor="pokemon-left">Pokemon 1</label>
+              <input
+                id="pokemon-left"
+                type="text"
+                value={leftInput}
+                onChange={(event) => setLeftInput(event.target.value)}
+                placeholder="Ej: pikachu"
+                className="search-input"
+              />
+            </div>
+            <div className="selector-group">
+              <label htmlFor="pokemon-right">Pokemon 2</label>
+              <input
+                id="pokemon-right"
+                type="text"
+                value={rightInput}
+                onChange={(event) => setRightInput(event.target.value)}
+                placeholder="Ej: charizard"
+                className="search-input"
+              />
+            </div>
           </div>
-          <div className="selector-group">
-            <label htmlFor="pokemon-right">Pokémon 2</label>
-            <input
-              id="pokemon-right"
-              type="text"
-              value={rightInput}
-              onChange={(event) => setRightInput(event.target.value)}
-              placeholder="Ej: charizard"
-              className="search-input"
-            />
+          <div className="selector-actions">
+            <button type="submit" className="search-btn">Cargar Pokemon</button>
+            <p className="helper-text">Ataque especial: cada 3 turnos. Defensa especial: cada 2 turnos.</p>
           </div>
-          <button type="submit" className="search-btn">Cargar Pokémon</button>
         </form>
 
-        {loadingPokemons && <div className="loading">Cargando Pokémon...</div>}
+        {loadingPokemons && <div className="loading">Cargando Pokemon...</div>}
         {selectionError && <div className="error-message">{selectionError}</div>}
 
         {leftPokemon && rightPokemon && (
@@ -368,4 +374,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default Battle;

@@ -20,7 +20,7 @@ function Header() {
       <div className="header-right">
         <nav className="header-nav">
           <Link to="/home">Home</Link>
-          <Link to="/about-us">About Us</Link>
+          <Link to="/battle">Battle</Link>
           <Link to="/capabilities">Capabilities</Link>
           <Link to="/industries">Industries</Link>
           <Link to="/insights">Insights</Link>
